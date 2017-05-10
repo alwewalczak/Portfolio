@@ -6,7 +6,6 @@ $(function(){
     $allLinks.each(function(){
         array.push($(this).attr("href"));
     })
-    console.log(array);
 
     $(window).scroll(function(){
 
@@ -26,10 +25,16 @@ $(function(){
             }
         }
 
+        var currentScrollTop = $("body").scrollTop();
+        var offsetAbout = $("#about").offset().top;
+        var offsetContact = $("#contact").offset().top;
 
-        if($("body").scrollTop() > 300){
+        if (currentScrollTop >= offsetAbout - windowHeight/2)
             $("#about").addClass("animate");
-        }
+
+        if (currentScrollTop >= offsetContact - windowHeight/2)
+            $("#contact").addClass("animate");
+
     });
 
     $allLinks.on("click", function(){

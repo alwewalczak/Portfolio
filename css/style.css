@@ -8,9 +8,31 @@ body {
     position: relative;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
+.container {
+    width: 800px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.introduction {
+    color: #96897f;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    top:-40px;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+.mark {
+    border-bottom: 1px solid #96897f;
+    width: 0;
+    opacity: 0;
+    transition: 2s;
 }
 
 .nav {
@@ -19,7 +41,6 @@ section {
     right: 25px;
     position: fixed;
     z-index: 1;
-
 }
 
 .nav .menu {
@@ -91,10 +112,12 @@ section {
 }
 
 #home {
+    width: 100%;
+    height: 100vh;
     background-image: url("../img/portfolio-background.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 #home .home-box {
@@ -131,35 +154,9 @@ section {
     padding: 30px 10px;
 }
 
-#about .about-box {
-    max-width: 730px;
-    margin: 20px auto;
-}
-
-.introduction {
-    color: #96897f;
-    font-size: 26px;
-    font-weight: 400;
-    text-transform: lowercase;
-    text-align: center;
-    letter-spacing: 3px;
-    position: relative;
-    top:-40px;
-    opacity: 0;
-    transition: 2s;
-    transition-delay: 1s;
-}
-
 #about.animate .introduction {
     top: 0px;
     opacity: 1;
-}
-
-#about .about-box .mark {
-    border-bottom: 1px solid #96897f;
-    width: 0;
-    opacity: 0;
-    transition: 2s;
 }
 
 #about.animate .mark {
@@ -167,7 +164,7 @@ section {
     opacity: 1;
 }
 
-#about .about-box .explication {
+#about .explication {
     font-size: 16px;
     line-height: 35px;
     font-weight: 300;
@@ -187,7 +184,7 @@ section {
     opacity: 1;
 }
 
-#about .about-box .tech-and-skills {
+#about .tech-and-skills {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -197,49 +194,49 @@ section {
     color: #96897f;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(1) {
+#about .tech-and-skills li:nth-of-type(1) {
     opacity: 0;
     transition: 1s;
     transition-delay: 1.8s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(2) {
+#about .tech-and-skills li:nth-of-type(2) {
     opacity: 0;
     transition: 1s;
     transition-delay: 2s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(3) {
+#about .tech-and-skills li:nth-of-type(3) {
     opacity: 0;
     transition: 1s;
     transition-delay: 2.2s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(4) {
+#about .tech-and-skills li:nth-of-type(4) {
     opacity: 0;
     transition: 1s;
     transition-delay: 2.4s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(5) {
+#about .tech-and-skills li:nth-of-type(5) {
     opacity: 0;
     transition: 1s;
     transition-delay: 2.6s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(6) {
+#about .tech-and-skills li:nth-of-type(6) {
     opacity: 0;
     transition: 1s;
     transition-delay: 2.8s;
 }
 
-#about .about-box .tech-and-skills li:nth-of-type(7) {
+#about .tech-and-skills li:nth-of-type(7) {
     opacity: 0;
     transition: 1s;
     transition-delay: 3s;
 }
 
-#about.animate .about-box .tech-and-skills li {
+#about.animate .tech-and-skills li {
     opacity: 1;
     font-size: 18px;
 }
@@ -247,7 +244,7 @@ section {
 #projects {
     display: flex;
     align-items: stretch;
-    height: 70vh;
+    height: 80vh;
 }
 
 #projects .project-box {
@@ -321,6 +318,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px 10px;
 }
 
 #contact.animate .introduction {
@@ -328,14 +326,28 @@ section {
     opacity: 1;
 }
 
-/*#contact .contact-box .contact-headline {
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 5px;
-    margin-bottom: 60px;
-}*/
+#contact.animate .mark {
+    width: 100%;
+    opacity: 1;
+}
 
-#contact .contact-box form input[type=text], input[type=email], textarea {
+#contact form {
+    width: 350px;
+    max-width: 100%;
+    margin: 30px auto 0;
+    position: relative;
+    bottom:-40px;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: .5s;
+}
+
+#contact.animate form {
+    bottom: 0;
+    opacity: 1;
+}
+
+#contact form input[type=text], input[type=email], textarea {
     border: none;
     width: 100%;
     padding: 5px 5px;
@@ -348,20 +360,20 @@ section {
     text-transform: lowercase;
 }
 
-#contact .contact-box form textarea {
+#contact form textarea {
     resize: none;
 }
 
-#contact .contact-box form input::placeholder, textarea::placeholder {
+#contact form input::placeholder, textarea::placeholder {
     color: #96897f;
     opacity: 0.5;
 }
 
-#contact .contact-box form input:focus, textarea:focus {
+#contact form input:focus, textarea:focus {
     border-bottom: 1px solid #848484;
 }
 
-#contact .contact-box form input[type="submit"] {
+#contact form input[type="submit"] {
     width: 100%;
     background: #fff;
     color: #96897f;
@@ -373,7 +385,7 @@ section {
     text-transform: lowercase;
 }
 
-#contact .contact-box form input[type="submit"]:hover {
+#contact form input[type="submit"]:hover {
     background: #ad9e85;
     color: #fff;
 }
@@ -383,38 +395,32 @@ section {
     height: auto;
 }
 
-#footer .footer-box {
+#footer .container {
     position: relative;
-    padding: 10px 0;
 }
 
-#footer .footer-box .footer-start {
-    margin-bottom: 40px;
-}
-
-#footer .footer-box .footer-start .socials {
+#footer .footer-start .socials {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    color: #96897f;
+
 }
 
-#footer .footer-box .footer-start .socials:hover {
-    color: #928062;
-}
-
-#footer .footer-box .footer-start .socials li {
+#footer .footer-start .socials li a {
     font-size: 16px;
+    display: block;
     padding: 40px;
     text-transform: lowercase;
     letter-spacing: 3px;
+    text-decoration: none;
+    color: #96897f;
 }
 
-#footer .footer-box .footer-start .socials li:hover {
+#footer .footer-start .socials li a:hover {
     opacity: 0.5;
 }
 
-#footer .footer-box .footer-end {
+#footer .footer-end {
     text-transform: uppercase;
     font-size: 12px;
     color: #bdbdbd;
