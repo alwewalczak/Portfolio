@@ -25,6 +25,14 @@ $(function(){
             }
         }
 
+        if (windowPos + windowHeight == docHeight) {
+            if (!$(".menu li:last-child").hasClass("nav-active")) {
+                var navActiveCurrent = $(".nav-active").attr("href");
+                $("a[href='" + navActiveCurrent + "']").closest("li").removeClass("nav-active");
+                $(".menu li:last-child").addClass("nav-active");
+            }
+        }
+
         var currentScrollTop = $("body").scrollTop();
         var offsetAbout = $("#about").offset().top;
         var offsetContact = $("#contact").offset().top;

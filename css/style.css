@@ -397,6 +397,8 @@ body {
 
 #footer .container {
     position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 #footer .footer-start .socials {
