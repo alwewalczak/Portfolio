@@ -98,6 +98,7 @@ body {
     width:100%;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 .parallax-one {
     background-image: url("../img/code_pexels.jpeg");
@@ -466,4 +467,49 @@ body {
     color: #bdbdbd;
     letter-spacing: 3px;
     text-align: center;
+}
+
+/*add mobile styles*/
+
+.mobile-section .mobile-nav {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-section .mobile-nav li {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid #848484;
+    letter-spacing: 3px;
+}
+
+.mobile-section .mobile-nav li a {
+    text-decoration: none;
+    color: #96897f;
+}
+
+.mobile-section .mobile-nav li:hover {
+  border-color: #bdbdbd;
+}
+
+.mobile-section.mobile .mobile-nav {
+    display: block;
+}
+
+.mobile-section.mobile .mobile-nav a {
+    display: block;
+}
+
+.mobile-section.mobile .nav {
+    display: none;
+}
+
+.mobile-section.mobile .nav .menu li {
+    border: none;
+}
+
+.mobile-section.mobile.expanded .nav {
+  display: block;
 }

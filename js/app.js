@@ -55,12 +55,29 @@ $(function(){
 
             });
 
-
     })
 
+    // add mobile menu
 
+    var mobile = window.matchMedia("screen and (max-width: 768px) ");
+    responsive(mobile);
+    mobile.addListener(function(mobile) {
+        responsive(mobile);
+    });
 
+    function responsive(mobile){
+        var container = document.querySelector(".mobile-section");
+        if (mobile.matches) {
+            container.classList.add("mobile");
+        } else {
+            container.classList.remove("mobile");
+        }
+    }
 
-
+        var navBtn = document.querySelector(".nav");
+        navBtn.addEventListener("click",function(){
+            var container = document.querySelector(".mobile-section");
+            container.classList.toggle('expanded');
+        });
 
 });
