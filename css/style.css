@@ -25,7 +25,15 @@ body {
     position: relative;
     top:-40px;
     opacity: 0;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
     transition-delay: 1s;
 }
 
@@ -34,6 +42,10 @@ body {
     margin-top: 10px;
     width: 0;
     opacity: 0;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
 }
 
@@ -76,11 +88,19 @@ body {
     position: relative;
     top: -20px;
     color: #bdbdbd;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .nav .menu li.nav-active .text,
 .nav .menu li:hover .text {
     top: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .nav .menu li.nav-active .text a,
@@ -106,7 +126,6 @@ body {
 
 .parallax-two {
     background-image: url("../img/phone_old_pexels.jpeg");
-
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
@@ -122,9 +141,43 @@ body {
     text-align: center;
     color: #bdbdbd;
     -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     animation: pulse 3s infinite;
     right: 25px;
     bottom: 25px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #bdbdbd;
+  }
+  100% {
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    color: #bdbdbd;
+  }
+  100% {
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    color: #bdbdbd;
+  }
+  100% {
+    color: #fff;
+    font-weight: 300;
+  }
 }
 
 @keyframes pulse {
@@ -177,7 +230,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height:auto;
+    height: auto;
     padding: 30px 10px;
 }
 
@@ -200,9 +253,17 @@ body {
     color: black;
     margin-top: 30px;
     position: relative;
-    bottom:-40px;
+    bottom: -40px;
     opacity: 0;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
     transition-delay: .5s;
 }
 
@@ -228,49 +289,113 @@ body {
 
 #about .tech-and-skills li:nth-of-type(1) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 1.8s;
+    -moz-transition-delay: 1.8s;
+    -ms-transition-delay: 1.8s;
+    -o-transition-delay: 1.8s;
     transition-delay: 1.8s;
 }
 
 #about .tech-and-skills li:nth-of-type(2) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
     transition-delay: 2s;
 }
 
 #about .tech-and-skills li:nth-of-type(3) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 2.2s;
+    -moz-transition-delay: 2.2s;
+    -ms-transition-delay: 2.2s;
+    -o-transition-delay: 2.2s;
     transition-delay: 2.2s;
 }
 
 #about .tech-and-skills li:nth-of-type(4) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 2.4s;
+    -moz-transition-delay: 2.4s;
+    -ms-transition-delay: 2.4s;
+    -o-transition-delay: 2.4s;
     transition-delay: 2.4s;
 }
 
 #about .tech-and-skills li:nth-of-type(5) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 2.6s;
+    -moz-transition-delay: 2.6s;
+    -ms-transition-delay: 2.6s;
+    -o-transition-delay: 2.6s;
     transition-delay: 2.6s;
 }
 
 #about .tech-and-skills li:nth-of-type(6) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 2.8s;
+    -moz-transition-delay: 2.8s;
+    -ms-transition-delay: 2.8s;
+    -o-transition-delay: 2.8s;
     transition-delay: 2.8s;
 }
 
 #about .tech-and-skills li:nth-of-type(7) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    -ms-transition-delay: 3s;
+    -o-transition-delay: 3s;
     transition-delay: 3s;
 }
 
 #about .tech-and-skills li:nth-of-type(8) {
     opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transition-delay: 3.2s;
+    -moz-transition-delay: 3.2s;
+    -ms-transition-delay: 3.2s;
+    -o-transition-delay: 3.2s;
     transition-delay: 3.2s;
 }
 
@@ -308,6 +433,10 @@ body {
     flex-direction: column;
     background: black;
     opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -345,6 +474,10 @@ body {
     display: block;
     margin-top: 5px;
     letter-spacing: 3px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -376,7 +509,15 @@ body {
     position: relative;
     bottom:-40px;
     opacity: 0;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
     transition-delay: .5s;
 }
 
