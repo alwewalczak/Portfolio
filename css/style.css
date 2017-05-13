@@ -413,14 +413,16 @@ body {
 #projects .project-box {
     width: 50%;
     position: relative;
+    background-size:cover;
+    background-position:center;
 }
 
 #projects #project-one {
-
+    background-image: url(../img/project1.jpeg)
 }
 
 #projects #project-two {
-
+    background-image: url(../img/project2.jpeg)
 }
 
 #projects .project-box .project-details {
@@ -615,6 +617,10 @@ body {
 .mobile-section .mobile-nav {
     display: none;
     cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
 }
 
 .mobile-section .mobile-nav li {
@@ -626,6 +632,13 @@ body {
     letter-spacing: 3px;
 }
 
+.mobile-section .mobile-nav li.nav-active {
+    background-color: #ad9e85;
+}
+.mobile-section .mobile-nav li.nav-active a {
+    color:white;
+}
+
 .mobile-section .mobile-nav li a {
     text-decoration: none;
     color: #96897f;
@@ -635,22 +648,56 @@ body {
   border-color: #bdbdbd;
 }
 
-.mobile-section.mobile .mobile-nav {
+/* MOBILE VERSION */
+
+/* navigation */
+body.mobile .mobile-section .mobile-nav {
     display: block;
 }
 
-.mobile-section.mobile .mobile-nav a {
+body.mobile .mobile-section .mobile-nav a {
     display: block;
 }
 
-.mobile-section.mobile .nav {
+body.mobile .mobile-section .nav {
     display: none;
 }
 
-.mobile-section.mobile .nav .menu li {
+body.mobile .mobile-section .nav .menu li {
     border: none;
 }
 
-.mobile-section.mobile.expanded .nav {
-  display: block;
+/* home */
+body.mobile #home {
+    background-position:left;
 }
+body.mobile #home .home-box {
+    left: 0;
+    top: 90px;
+    width: 100%;
+}
+body.mobile #home .name-details{
+    width: 230px;
+    margin: 0 auto;
+}
+body.mobile #home .home-box .name-details .name {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+body.mobile #home .home-box .name-details .name-desc {
+    font-size:16px;
+}
+
+/* projects */
+body.mobile #projects{
+    flex-wrap:wrap;
+}
+body.mobile #projects .project-box {
+    width:100%;
+}
+body.mobile #projects .project-box .project-details {
+    opacity:0.8;
+}
+/*body.mobile .mobile-section.expanded .nav {
+  display: block;
+}*/
