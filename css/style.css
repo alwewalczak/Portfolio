@@ -547,7 +547,6 @@ body {
 
 #contact form input::placeholder, textarea::placeholder {
     color: #96897f;
-    opacity: 0.5;
 }
 
 #contact form input:focus, textarea:focus {
@@ -612,8 +611,7 @@ body {
     text-align: center;
 }
 
-/*add mobile styles*/
-
+/* add mobile styles */
 .mobile-section .mobile-nav {
     display: none;
     cursor: pointer;
@@ -669,14 +667,14 @@ body.mobile .mobile-section .nav .menu li {
 
 /* home */
 body.mobile #home {
-    background-position:left;
+    background-position: left;
 }
 body.mobile #home .home-box {
     left: 0;
     top: 90px;
     width: 100%;
 }
-body.mobile #home .name-details{
+body.mobile #home .name-details {
     width: 230px;
     margin: 0 auto;
 }
@@ -685,12 +683,12 @@ body.mobile #home .home-box .name-details .name {
     margin-bottom: 0;
 }
 body.mobile #home .home-box .name-details .name-desc {
-    font-size:16px;
+    font-size: 16px;
 }
 
 /* projects */
-body.mobile #projects{
-    flex-wrap:wrap;
+body.mobile #projects {
+    flex-wrap: wrap;
 }
 body.mobile #projects .project-box {
     width:100%;
@@ -698,6 +696,3 @@ body.mobile #projects .project-box {
 body.mobile #projects .project-box .project-details {
     opacity:0.8;
 }
-/*body.mobile .mobile-section.expanded .nav {
-  display: block;
-}*/

@@ -74,10 +74,4 @@ $(function(){
         }
     }
 
-    // var navBtn = document.querySelector(".nav");
-    // navBtn.addEventListener("click",function(){
-    //     var container = document.querySelector(".mobile-section");
-    //     container.classList.toggle('expanded');
-    // });
-
 });
