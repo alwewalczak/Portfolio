@@ -69,7 +69,7 @@ body {
 }
 
 .nav .menu li .line {
-    height: 1px;
+    height: 3px;
     background-color: #bdbdbd;
     width: 100%;
     position: absolute;
@@ -131,63 +131,6 @@ body {
     -o-filter: grayscale(1);
     -ms-filter: grayscale(1);
     filter: grayscale(1);
-}
-
-.arrow {
-    position: absolute;
-    width: 30px;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
-    color: #bdbdbd;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    animation: pulse 3s infinite;
-    right: 25px;
-    bottom: 25px;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    color: #bdbdbd;
-  }
-  100% {
-    color: #fff;
-    font-weight: 300;
-  }
-}
-
-@-moz-keyframes pulse {
-  0% {
-    color: #bdbdbd;
-  }
-  100% {
-    color: #fff;
-    font-weight: 300;
-  }
-}
-
-@-o-keyframes pulse {
-  0% {
-    color: #bdbdbd;
-  }
-  100% {
-    color: #fff;
-    font-weight: 300;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    color: #bdbdbd;
-  }
-  100% {
-    color: #fff;
-    font-weight: 300;
-  }
 }
 
 #home {
@@ -260,11 +203,11 @@ body {
     -ms-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    -webkit-transition-delay: .5s;
-    -moz-transition-delay: .5s;
-    -ms-transition-delay: .5s;
-    -o-transition-delay: .5s;
-    transition-delay: .5s;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
 }
 
 #about.animate .explication {
@@ -411,18 +354,14 @@ body {
 }
 
 #projects .project-box {
-    width: 50%;
+    width: 100%;
     position: relative;
     background-size:cover;
     background-position:center;
 }
 
 #projects #project-one {
-    background-image: url(../img/project1.jpeg)
-}
-
-#projects #project-two {
-    background-image: url(../img/project2.jpeg)
+    background-image: url(../img/daylight-environment-forest-459225.jpg)
 }
 
 #projects .project-box .project-details {
@@ -453,15 +392,6 @@ body {
     margin-bottom: 20px;
     color: #d3c6af;
     text-transform: lowercase;
- }
-
- #projects .project-box .project-details .project-description {
-     font-size: 16px;
-     color: #c5b395;
-     font-weight: 300;
-     margin-bottom: 20px;
-     letter-spacing: 3px;
-     text-align: center;
  }
 
 #projects .project-box .project-details .project-link .button-link {
@@ -516,11 +446,11 @@ body {
     -ms-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    -webkit-transition-delay: .5s;
-    -moz-transition-delay: .5s;
-    -ms-transition-delay: .5s;
-    -o-transition-delay: .5s;
-    transition-delay: .5s;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
 }
 
 #contact.animate form {
@@ -695,4 +625,8 @@ body.mobile #projects .project-box {
 }
 body.mobile #projects .project-box .project-details {
     opacity:0.8;
+}
+
+.alert {
+    display: none;
 }
